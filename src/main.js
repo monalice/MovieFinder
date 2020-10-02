@@ -1,4 +1,3 @@
-//comportamento do menu
 const main = document.querySelector(`main`);
 var menu = document.getElementById(`menu`);
 
@@ -8,6 +7,9 @@ import requestTopRated from "./top_rated.js";
 import requestUpComing from "./upcoming.js";
 
 requestPopular();
+
+var logo = document.querySelector("header > img");
+logo.addEventListener('click', requestPopular);
 
 export default function cleanMain() {
     main.innerHTML = "";

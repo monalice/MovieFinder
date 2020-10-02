@@ -12,6 +12,7 @@ function renderPopular(response) {
     cleanSelectMenu();
     btnPopular.classList.add("select");
     cleanMain();
+    menu.style.display = "inherit";
 
     resultsPopular = response.data.results;
 

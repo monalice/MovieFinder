@@ -1,4 +1,3 @@
-//renderiza filmes no cinema
 const main = document.querySelector(`main`);
 var resultsNowPlaying;
 

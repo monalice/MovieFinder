@@ -1,4 +1,3 @@
-//renderiza fimes com maiores notas
 const main = document.querySelector(`main`);
 var resultsTopRated;
 

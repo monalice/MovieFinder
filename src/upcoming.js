@@ -1,4 +1,3 @@
-//renderiza os que serão lançados
 const main = document.querySelector(`main`);
 var resultsUpComing;
 
