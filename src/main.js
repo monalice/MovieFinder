@@ -13,13 +13,14 @@ export default function cleanMain() {
     main.innerHTML = "";
 }
 
-/*export function cleanSelectMenu() {
-    var btns = document.querySelectorAll("button");
+export function cleanSelectMenu() {
+    
+    btnPopular.classList.remove("select");
+    btnTopRated.classList.remove("select");
+    btnUpComing.classList.remove("select");
+    btnNowPlaying.classList.remove("select");
 
-    btns.forEach(item => {
-        item.style.backgroundColor = "black";
-    });
-}*/
+}
 
 export var btnPopular = document.getElementById(`popular`);
 btnPopular.addEventListener('click', requestPopular);

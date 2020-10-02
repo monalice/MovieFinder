@@ -1,19 +1,18 @@
 //Renderiza lista de filmes populares
 const main = document.querySelector(`main`);
 var resultsPopular;
-//var btnPopular = document.getElementById(`popular`);
 
-import cleanMain from "./main.js";
+import cleanMain, { btnPopular, cleanSelectMenu } from "./main.js";
 
 export default function requestPopular() {
-    var req = axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=02366f3fcbdce2d3677f4fb7857e9f52`);
+    var req = axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=02366f3fcbdce2d3677f4fb7857e9f52&language=pt-br&page=1`);
     req.then(renderPopular);
 }
 
 function renderPopular(response) {
+    cleanSelectMenu();
+    btnPopular.classList.add("select");
     cleanMain();
-    /*cleanSelectMenu();
-    btnPopular.style.backgroundColor = "green";*/
 
     resultsPopular = response.data.results;
 

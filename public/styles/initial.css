@@ -31,6 +31,10 @@ button {
     height: 40px;
 }
 
+.select {
+    background-color: rgb(25, 192, 3);
+}
+
 main {
     display: flex;
     justify-content: center;

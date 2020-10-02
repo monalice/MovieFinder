@@ -2,11 +2,13 @@
 const main = document.querySelector(`main`);
 var resultsNowPlaying;
 
-import cleanMain from "./main.js";
+import cleanMain, { btnNowPlaying, cleanSelectMenu } from "./main.js";
 
 export default function requestNowPlaying() {
-    var req = axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=02366f3fcbdce2d3677f4fb7857e9f52`);
+    var req = axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=02366f3fcbdce2d3677f4fb7857e9f52&language=pt-br&page=1`);
     req.then(renderNowPlaying);
+    cleanSelectMenu();
+    btnNowPlaying.classList.add("select");
 }
 
 function renderNowPlaying(response) {
@@ -51,8 +53,8 @@ function renderMovieNowPlaying(movie) {
         <img src="https://image.tmdb.org/t/p/w300${movie.poster}">
         <div>
             <div class="title">
-                <span>${movie.title}</span>
-                <span>${movie.vote}</span>
+                <span id="title-yellow">${movie.title}</span>
+                <span id="vote">${movie.vote}</span>
             </div>
             <div class="overview">${movie.overview}</div>
         </div>
