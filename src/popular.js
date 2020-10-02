@@ -1,6 +1,7 @@
 //Renderiza lista de filmes populares
 const main = document.querySelector(`main`);
 var resultsPopular;
+//var btnPopular = document.getElementById(`popular`);
 
 import cleanMain from "./main.js";
 
@@ -11,6 +12,9 @@ export default function requestPopular() {
 
 function renderPopular(response) {
     cleanMain();
+    /*cleanSelectMenu();
+    btnPopular.style.backgroundColor = "green";*/
+
     resultsPopular = response.data.results;
 
     resultsPopular.forEach(createImgPopular);
@@ -42,6 +46,7 @@ function selectMoviePopular(item) {
 
 function renderMoviePopular(movie) {
     cleanMain();
+    menu.style.display = "none";
     
     var section = document.createElement("section");
     section.setAttribute("id", "oneMovie");
@@ -50,19 +55,20 @@ function renderMoviePopular(movie) {
         <img src="https://image.tmdb.org/t/p/w300${movie.poster}">
         <div>
             <div class="title">
-                <span>${movie.title}</span>
-                <span>${movie.vote}</span>
+                <span id="title-yellow">${movie.title}</span>
+                <span id="vote">${movie.vote}</span>
             </div>
             <div class="overview">${movie.overview}</div>
         </div>
     </div>`;
 
     main.appendChild(section);
-
 }
 
+/*export function cleanSelectMenu() {
+    var btns = document.querySelectorAll("button");
 
-/* //n ta pegando bem...
-    cleanSelectMenu();
-    btnPopular.style.backgroundColor = "green";
-*/
+    btns.forEach(item => {
+        item.style.backgroundColor = "black";
+    });
+}*/

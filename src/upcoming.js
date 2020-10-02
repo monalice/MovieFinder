@@ -42,6 +42,7 @@ function selectMovieUpComing(item) {
 
 function renderMovieUpComing(movie) {
     cleanMain();
+    menu.style.display = "none";
     
     var section = document.createElement("section");
     section.setAttribute("id", "oneMovie");

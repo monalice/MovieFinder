@@ -11,8 +11,8 @@ export default function requestNowPlaying() {
 
 function renderNowPlaying(response) {
     cleanMain();
-    resultsNowPlaying = response.data.results;
 
+    resultsNowPlaying = response.data.results;
     resultsNowPlaying.forEach(createImgNowPlaying);
 }
 
@@ -42,6 +42,7 @@ function selectMovieNowPlaying(item) {
 
 function renderMovieNowPlaying(movie) {
     cleanMain();
+    menu.style.display = "none";
     
     var section = document.createElement("section");
     section.setAttribute("id", "oneMovie");

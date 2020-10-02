@@ -1,5 +1,6 @@
 //comportamento do menu
 const main = document.querySelector(`main`);
+var menu = document.getElementById(`menu`);
 
 import requestPopular from "./popular.js";
 import requestNowPlaying from "./now_playing.js";

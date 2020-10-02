@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    color: #fff;
+    margin: 60px 50px;
+    width: 90%;
+}
+
+#title-yellow {
+    color: #FDC740;
+    font-family: 'Balsamiq Sans', cursive;
+    padding-top: 10px;
+    font-size: 35px;
+}
+
+span {
+    display: block;
+}
+
+#vote {
+    border: 2px solid rgb(189, 188, 188);
+    border-radius: 50%;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+}
+
+.overview {
+    margin: 20px 10px;
+    padding: 20px 10px;
+}

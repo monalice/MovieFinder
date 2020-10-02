@@ -42,6 +42,7 @@ function selectMovieTopRated(item) {
 
 function renderMovieTopRated(movie) {
     cleanMain();
+    menu.style.display = "none";
     
     var section = document.createElement("section");
     section.setAttribute("id", "oneMovie");
