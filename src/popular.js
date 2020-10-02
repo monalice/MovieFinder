@@ -1,4 +1,3 @@
-//Renderiza lista de filmes populares
 const main = document.querySelector(`main`);
 var resultsPopular;
 
@@ -63,11 +62,3 @@ function renderMoviePopular(movie) {
 
     main.appendChild(section);
 }
-
-/*export function cleanSelectMenu() {
-    var btns = document.querySelectorAll("button");
-
-    btns.forEach(item => {
-        item.style.backgroundColor = "black";
-    });
-}*/
