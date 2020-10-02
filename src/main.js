@@ -12,14 +12,22 @@ export default function cleanMain() {
     main.innerHTML = "";
 }
 
-var btnPopular = document.getElementById(`popular`);
+/*export function cleanSelectMenu() {
+    var btns = document.querySelectorAll("button");
+
+    btns.forEach(item => {
+        item.style.backgroundColor = "black";
+    });
+}*/
+
+export var btnPopular = document.getElementById(`popular`);
 btnPopular.addEventListener('click', requestPopular);
 
-var btnNowPlaying = document.getElementById(`now_playing`);
+export var btnNowPlaying = document.getElementById(`now_playing`);
 btnNowPlaying.addEventListener('click', requestNowPlaying);
 
-var btnTopRated = document.getElementById(`top_rated`);
+export var btnTopRated = document.getElementById(`top_rated`);
 btnTopRated.addEventListener('click', requestTopRated);
 
-var btnUpComing = document.getElementById(`up_coming`);
+export var btnUpComing = document.getElementById(`up_coming`);
 btnUpComing.addEventListener('click', requestUpComing);
