@@ -1,0 +1,25 @@
+{
+  "name": "movie-finder",
+  "version": "1.0.0",
+  "description": "Seu primeiro projeto usando JavaScript Moderno será um site que te ajuda a descobrir novos filmes!",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monalice/projeto-06-movie-finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monalice/projeto-06-movie-finder/issues"
+  },
+  "homepage": "https://github.com/monalice/projeto-06-movie-finder#readme"
+}
